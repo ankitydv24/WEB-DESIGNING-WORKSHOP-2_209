@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>JS Program</title>
+</head>
+<body>
+  <h2>Enter Two Numbers</h2>
+  <input id="n1" type="number">
+  <input id="n2" type="number">
+  <button onclick="calc()">Calculate</button>
+
+  <p id="sum"></p>
+  <p id="diff"></p>
+  <p id="prod"></p>
+
+  <script>
+    function calc() {
+      let a = +document.getElementById("n1").value;
+      let b = +document.getElementById("n2").value;
+
+      document.getElementById("sum").innerHTML = "Sum = " + (a + b);
+      document.getElementById("diff").innerHTML = "Diff = " + (a - b);
+      document.getElementById("prod").innerHTML = "Prod = " + (a * b);
+    }
+  </script>
+</body>
+</html>
